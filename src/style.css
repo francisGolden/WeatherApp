@@ -1,0 +1,60 @@
+html, body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+    'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+#container {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    justify-items: center;
+    grid-template-rows: 0.2fr 0.1fr 1fr;
+    gap: 20px;
+}
+
+#title-container {
+    display: flex;
+    text-align: center;
+    font-size: 30px;
+}
+
+#form {
+    align-self: center;
+    justify-self: center;
+}
+
+#box {
+    display: grid;
+    width: 60vw;
+    max-width: 600px;
+    max-height: 300px;
+    height: 50vh;
+    border-radius: 5px;
+    padding: 15px;
+    gap: 10px;
+    background-color: rgba(174, 238, 229, 0.247);
+    align-self: start;
+    font-size: 17px;
+
+}
+
+.row {
+    border-radius: 5px;
+    background-color: rgba(251, 255, 27, 0.445);
+    padding: 5px;
+    transition: .3s;
+}
+
+.content {
+    font-weight: 600;
+    font-family: monospace;
+    font-size: 20px;
+}
