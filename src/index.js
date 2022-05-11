@@ -71,6 +71,7 @@ form.addEventListener("submit", e=>{
 
 const createBox = () => {
     box.style.gridTemplateColumns = "1fr 1fr"
+    // box.style.minWidth = "fit-content"
     for (const property in result){
         row = document.createElement("div")
         row.setAttribute("id",`${property}`)
