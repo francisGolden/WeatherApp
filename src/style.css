@@ -83,7 +83,8 @@ input {
 
     #box {
         font-size: 20px;
-        min-width: 340px;
+        min-width: 280px;
+        
         width: 350px;
         background-size: 150px 150px;
     }
@@ -100,7 +101,7 @@ input {
     width: 60vw;
     max-width: 600px;
     max-height: 380px;
-    height: 60vh;
+    height: fit-content;
     border-radius: 5px;
     padding: 15px;
     gap: 10px;
@@ -112,6 +113,7 @@ input {
     align-self: start;
     font-size: 17px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    /* transition: .6s; */
 }
 
 .row {
