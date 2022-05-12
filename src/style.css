@@ -16,12 +16,17 @@ html, body {
     justify-items: center;
     grid-template-rows: 0.2fr 0.1fr 1fr;
     gap: 20px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 350px 350px;
+    align-self: start;
 }
 
 #title-container {
     display: flex;
     text-align: center;
     font-size: 30px;
+    text-shadow: 2px 2px #fefefe;
 }
 
 #form {
@@ -29,7 +34,7 @@ html, body {
     justify-self: center;
     font-size: 25px;
     display: flex;
-    gap: 10px;
+    gap: 15px;
     flex-direction: column;
     text-align: center;
     align-items: center;
@@ -39,6 +44,9 @@ html, body {
     width: 300px;
     height: 30px;
     font-size: 25px;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 input {
@@ -47,13 +55,16 @@ input {
 }
 
 #submit {
-    font-size: 20px;
+    font-size: 19px;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 @media screen and (max-width: 600px) {
     #search {
-        font-size: 20px;
-        height: 27px;
+        font-size: 25px;
+        height: 30px;
         border: 0;
         border-radius: 4px;
     }
@@ -73,7 +84,8 @@ input {
     #box {
         font-size: 20px;
         min-width: 340px;
-        width: 340px;
+        width: 350px;
+        background-size: 150px 150px;
     }
 
     #form {
@@ -87,26 +99,32 @@ input {
     display: grid;
     width: 60vw;
     max-width: 600px;
-    max-height: 300px;
-    height: 50vh;
+    max-height: 380px;
+    height: 60vh;
     border-radius: 5px;
     padding: 15px;
     gap: 10px;
-    background-color: rgba(174, 238, 229, 0.247);
+    background-color: #C9C9C9;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 350px 350px;
     align-self: start;
     font-size: 17px;
-
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .row {
     border-radius: 5px;
-    background-color: rgba(251, 255, 27, 0.445);
-    padding: 5px;
+    color: #424242;
+    background-color: #FEFFEA;
+    padding: 10px;
     transition: .3s;
 }
 
 .content {
-    font-weight: 600;
+    font-weight: 800;
     font-family: monospace;
     font-size: 20px;
+    color: #424242;
 }
